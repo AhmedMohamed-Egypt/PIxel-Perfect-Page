@@ -1,0 +1,49 @@
+#saftey{
+    padding-top: 8rem;
+    .saftey{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 230px;
+        justify-content: space-between;
+        @include max(992){
+            height: 350px;
+        }
+        @include max(500){
+            height: 400px;
+        }
+           @include max(450){
+            height: 430px;
+        }
+        
+        >div{
+            
+        }
+        
+        h2{
+            color: $redColor;
+        }
+        p{
+            font-size: 1.4rem;
+            width: 892.44px;
+            max-width: 100%;
+            text-align: center;
+            color: $greyColor;
+            line-height: 1.7;
+             @include max(992){
+            width: 80%;
+                 margin-left: auto;
+                 margin-right: auto;
+        }
+             @include max(500){
+            width: 76%;
+        }
+            
+        }
+        a{
+            font-size: 14px;
+             color: $redColor;
+        }
+    }
+}

@@ -1,0 +1,841 @@
+#letsGo{
+       -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+    padding-top: 3rem;
+   height: 1200px;
+    @include max(908){
+        height: 1250px;
+    }
+    @include max(769){
+        height: 1800px;
+    }
+  
+    @include max(721){
+        height: 1800px;
+    }
+    @include max(520){
+        height: 1890px;
+    }
+     @include max(500){
+        height:2150px;
+    }
+    @include max(450){
+        height: 2200px;
+    }
+    
+       @include max(375){
+                        
+        height: 2050px;
+                     
+        }
+    @include max(320){
+        height: 1900px;
+    }
+     
+ 
+    .letsgo{
+        
+     
+        position: relative;
+        
+        >img{
+            width: 100%;
+            height: 407px;
+           
+            object-fit: cover;
+            @include max(1440){
+                height: 385px;
+            }
+            @include max(1299){
+                height: 344px;
+            }
+             @include max(1199){
+              height: 324px;
+                    }
+            @include max(838){
+                height: 270px;
+            }
+            @include max(810){
+                height: 240px;
+            }
+            
+            @include max(769){
+                height: 220px;
+            }
+            @include max(700){
+                height: 210px;
+            }
+            @include max(500){
+                display: none
+            }
+           
+        }
+        img[alt="svg"]{
+            display: none;
+              @include max(501){
+                display: block;
+                  height: 220px;
+            }
+            @include max(440){
+                height: 202px;
+            }
+            @include max(375){
+                height: 180px;
+            }
+             @include max(320){
+                height: 150px;
+            }
+        }
+        
+        &__content{
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+         
+            &__upper{
+             display: flex;
+       
+                width: 100%;
+                align-items: center;
+                flex-wrap: wrap;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50%;
+                    background-color: #EDEFF1;
+                    z-index: -1;
+                    display: none;
+                    @include max(769){
+                        display: block;
+                    }
+                }
+                @include max(1299){
+                   
+                }
+                @include max(1199){
+                    justify-content: center;
+                    
+                }
+                @include max(769){
+                    flex-direction: column;
+                }
+               
+                h2{
+                    font-size: 4.8rem;
+                    color: $redColor;
+                    font-family: 'bhatoshine';
+                    display: inline-block;
+                    width: 314px;
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    @include max(1199){
+                        width: auto;
+                    }
+                    @include max(1200){
+                        justify-content: center;
+                    }
+                    @include max(1199){
+                        width: 50%;
+                        justify-content: flex-start;
+                    }
+                      @include max(930){
+                   
+                         font-size: 6rem;
+                       
+                    }
+                    
+                     @include max(920){
+                        width: 50%;
+                     
+                       
+                    }
+                    @include max(769){
+                        font-size: 6rem;
+                        position: relative;
+                        top: 90px;
+                        justify-content: center;
+                        
+                    }
+                    @include max(500){
+                        top: 200px;
+                        z-index: 9999;
+                        font-size: 7.2rem;
+                        width: 100%;
+                    }
+                    @include max(320){
+                        top: 150px;
+                     
+                    }
+                    
+                }
+                .leftImage{
+                width: 870px;
+                    display: flex;
+                    justify-content: flex-end;
+                    @include max(1299){
+                        width: 750px;
+                    }
+                    @include max(1199){
+                        width: auto;
+                        margin-left: 0;
+                        z-index: 9;
+                        transform: translateX(60px);
+                    }
+                      @include max(920){
+                      /*  transform: translateX(0px);*/
+                       
+                    }
+                    
+                   
+                 
+                    @include max(810){
+                        transform: translateX(0px)
+                    }
+                    @include max(769){
+                        transform: translateX(0px);
+                        order: 3;
+                        margin-bottom: 5rem;
+                        margin-top: 3rem;
+                        
+                    }
+                    img{
+                      @include max(1198){
+                            width: 300px;
+                        }
+                        @include max(940){
+                            width: 280px;
+                        }
+                        @include max(810){
+                            width: 250px;
+                        }
+                        @include max(769){
+                            width: auto;
+                        }
+                        @include max(375){
+                            width: 300px;
+                        }
+                         @include max(320){
+                            width: 280px;
+                        }
+                    }
+                }
+                .notes{
+                    width: 100%;
+                    background-color: #EDEFF1;
+                    height: 260px;
+                        
+                      @include max(1300){
+                     height: 300px;
+                                }
+                     @include max(1299){
+                       height:400px;
+                         position: relative;
+                         top: -1px;
+                         
+                                }
+                    @include max(1199){
+                       top: -50px;
+                        height: 500px;
+                    }
+                    @include max(1198){
+                       
+                        height: 400px;
+                    }
+                  /*  @include media(501,938){
+                       top: 0px;
+                        height: 450px;
+                    }*/
+                    @include max(856){
+                        top: 0;
+                        height: 500px;
+                    }
+                    @include max(859){
+                        height: 500px;
+                    }
+                    
+                    
+                    @include max(908){
+                        height: 450px;
+                    }
+                  
+                    
+                    @include max(769){
+                        top: 110px;
+                        height: 500px;
+                    }
+                    @include max(797){
+                        top: 0;
+                        height: 500px;
+                    }
+                     @include max(769){
+                        top:120px;
+                    }
+                     @include max(768){
+                       height: 550px;
+                    }
+                    @include max(720){
+                        height: 550px;
+                    }
+                    @include max(704){
+                        height: 600px;
+                        top: 100px;
+                    }
+                     @include max(520){
+                        height: 650px;
+                       
+                    }
+                    
+                   
+                    @include max(500){
+                        padding-top: 15rem;
+                        top: 95px;
+                        height: 900px;
+                    }
+                     @include max(440){
+                        
+                        top: 90px;
+                         height:900px;
+                     
+                    }
+                     @include max(436){
+                        
+                        top: 67px;
+                         height: 960px;
+                     
+                    }
+                       @include max(375){
+                        
+                       
+                         height: 800px;
+                     
+                    }
+                      @include max(360){
+                        
+                        height: 820px;
+                     
+                    }
+                    @include max(320){
+                        
+                        top:34px;
+                        height: 720px;
+                       
+                     
+                    }
+                            p{
+               
+                            color: $greyColor;
+                            font-size: 2rem;
+                            font-family: 'Arial', 'Helvetica', sans-serif;
+                                @include max(1439){
+                                   /* font-size: 1.6rem;*/
+                                }
+                                     @include max(1198){
+                               font-size: 1.8rem;
+                        }
+                                @include max(992){
+                                    font-size: 1.75rem;
+                                }
+                                @include max(920){
+                                    font-size: 1.7rem;
+                                }
+                                
+                                @include max(769){
+                                    transform: translateY(0px) !important;
+                                   font-size: 1.8rem !important;
+                                    width: 80% !important;
+                                      margin-left: 0 !important;
+                                    margin-left: auto !important;
+                                    margin-right: auto !important;
+                                }
+                               
+                               
+                           &:nth-of-type(1){
+                            transform: translateY(-100px);
+                               width: 640px;
+                               line-height: 1.6;
+                               margin-left: 17.4rem;
+                               max-width: 100%;
+                                 @include max(1299){
+                                    width: 540px;
+                                }
+                               
+                            @include max(1210){
+                                    width: 520px;
+                                }
+                     @include max(1200){
+                        margin-left: 8.4rem;
+                         width: 610px;
+                    }
+                               @include max(1199){
+                                   transform: translateY(-60px)
+                               }
+                                @include max(1198){
+                                         margin-left: 7.8rem;
+                                        width: 500px;
+                                    transform: translateY(-30px);
+                                }
+                               @include max(920){
+                                   margin-left: 8rem;
+                               }
+                                   @include max(910){
+                                   margin-left: 6rem;
+                               }
+                               @include max(838){
+                                   width: 450px;
+                               }
+                               
+                               @include max(992){
+                                   width: 500px;
+                               }
+                                @include max(908){
+                           transform: translateY(-30px)
+                        }
+                           @include max(890){
+                           transform: translateY(-10px)
+                        }
+                               @include max(810){
+                                   transform: translateY(-10px);
+                               }
+                              /* @include media(769,810){
+                                   margin-left: 8.8rem;
+                                   
+                               }*/
+                               @include max(436){
+                                   width: 350px !important;
+                                   font-size: 2rem !important;
+                               }
+                                @include max(436){
+                                   width: 350px !important;
+                                   font-size: 2rem !important;
+                               }
+                               @include max(375){
+                                   width: 300px !important;
+                                   font-size: 1.7rem !important;
+                               }
+                               @include max(320){
+                                   width: 270px !important;
+                                   font-size: 1.6rem !important;
+                               }
+                           }
+                           
+                           &:nth-of-type(2){
+                                transform: translateY(-100px);
+                               margin: 3.5rem 0;
+                               margin-left: 20rem;
+                               span{
+                                   display: block;
+                                   margin-bottom: 1rem;
+                                   @include max(600){
+                                       margin-bottom: .5rem;
+                                   }
+                                   @include max(436){
+                                       margin-bottom: 0rem;
+                                   }
+                                   &:nth-child(2){
+                                       br{
+                                           display: none;
+                                           @include max(436){
+                                               display: block;
+                                           }
+                                       }
+                                   }
+                               }
+                                @include max(1200){
+                                    margin-left: 12rem;
+                                    }
+                              @include max(1199){
+                                   transform: translateY(-60px)
+                               }
+                               @include max(1198){
+                                   margin-left: 11rem;
+                                   transform: translateY(-30px);
+                               }
+                               @include max(960){
+                                   margin-left: 9.5rem;
+                               }
+                                @include max(920){
+                                   margin-left: 7.5rem;
+                               }
+                          @include max(908){
+                           transform: translateY(-30px)
+                        }
+                                  @include max(890){
+                           transform: translateY(-10px)
+                        }
+                                @include max(810){
+                                   transform: translateY(-10px);
+                               }
+                                 @include max(769){
+                                  line-height: 1.6;
+                               }
+                               @include max(500){
+                                   margin: 5rem auto 5rem auto !important;
+                               }
+                                @include max(436){
+                                   width: 350px !important;
+                                   font-size: 2rem !important;
+                                    line-height: 1.6;
+                                    margin: 3rem auto 3rem auto !important;
+                               }
+                                  @include max(375){
+                                   width: 300px !important;
+                                   font-size: 1.7rem !important;
+                               }
+                                 @include max(320){
+                                   width: 270px !important;
+                                  font-size: 1.6rem !important;
+                               }
+                            
+                           }
+                             &:nth-of-type(3){
+                              transform: translateY(-100px);
+                                  line-height: 1.6;
+                                 width: 1050px;
+                                margin-left: 17.4rem;
+                                   @include max(1439){
+                                    width: 1000px;
+                                }
+                           @include max(1299){
+                                    width: 800px;
+                                }
+                                  @include max(1200){
+                                   margin-left: 8.4rem;
+                                       width: 80%;
+                                        }
+                                 @include max(1199){
+                                     transform: translateY(-60px)
+                                 }
+                                 @include max(1198){
+                                        margin-left: 7.8rem;
+                                     transform: translateY(-30px);
+                                 }
+                                  @include max(920){
+                                   margin-left: 8rem;
+                               }
+                                    @include max(910){
+                                   margin-left: 6rem;
+                               }
+                    @include max(908){
+                           transform: translateY(-30px);
+                        width: 650px;
+                        }
+                     @include max(890){
+                           transform: translateY(-10px)
+                        }
+                                  @include max(810){
+                                   transform: translateY(-10px);
+                               }
+                        
+                              /*   @include media(769,810){
+                                   margin-left: 8.8rem;
+                               }*/
+                                  @include max(436){
+                                  width: 350px !important;
+                                   font-size: 2rem !important;
+                                 
+                               }
+                                 @include max(375){
+                                   width: 300px !important;
+                                   font-size: 1.7rem !important;
+                               }
+                                   @include max(320){
+                                   width: 270px !important;
+                                   font-size: 1.6rem !important;
+                               }
+
+                                    br{
+                                           display: none;
+                                           @include max(436){
+                                               display: block;
+                                           }
+                                       }
+                              
+                           }
+                                
+                       
+                                
+                                
+                }
+                }
+            }
+            &__down{
+               
+             padding-bottom: 5rem;
+                
+                background-color: $lightgrey;
+                @include max(1299){
+                    position: relative;
+                    top: -3rem;
+                }
+                @include max(1199){
+                    top: -8rem;
+                }
+                @include max(769){
+                    top: 0;
+                }
+                &__notes{
+                    width: 1025px;
+                    margin: auto;
+               
+                }
+                
+                &__cards{
+                    width: 1075px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: flex-end;
+                    max-width: 100%;
+                     @include max(1299){
+                        
+                    justify-content: center;
+                    }
+                    @include max(1199){
+                        justify-content: flex-end;
+                        width: 960px;
+                        margin: 0;
+                        
+                    }
+                    @include max(1198){
+                        width: 910px;
+                        
+                    }
+                    @include max(992){
+                        flex-direction: column;
+                        position: relative;
+                        width: 100%;
+                    }
+                    .directDiv{
+                       width: 330px;
+                        border-top: 1px solid #fff;
+                        border-right: 2px solid #fff;
+                         border-bottom: 1px solid #fff;
+                        padding-top: 2.8rem;
+                        padding-bottom: 5rem;
+                        box-shadow: none;
+                        -webkit-box-shadow: 0 3px 15px #66666629;
+                        box-shadow: 0 3px 15px #66666629;
+                        @include max(1439){
+                        width: 310px;
+                    }
+                         @include max(1299){
+                        
+                        width: 250px;
+                    }
+                        
+                        
+                        &:nth-child(2){
+                            margin: 0 3rem;
+                        }
+                        img{
+                            display: block;
+                            margin: auto;
+                            @include max(500){
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                        @include max(992){
+                            width: 400px;
+                            margin: auto;
+                            border-left: 2px solid #fff;
+                            height: 380px;
+                            box-shadow: none;
+                        }
+                         @include max(769){
+                            width: 350px;
+                           
+                        }
+                        
+                        @include max(500){
+                            width: 315px;
+                            border: none;
+                            background-color:#fff;
+                            height: auto;
+                            }
+                        @include max(350){
+                            width: 300px;
+                            
+                            }
+                          @include max(340){
+                            width: 280px;
+                            
+                            }
+                         @include max(320){
+                            width: 250px;
+                           
+                            }
+                    }
+                    h3{
+                        font-size: 1.8rem;
+                        color: $redColor;
+                        font-family: 'Arial', 'Helvetica', sans-serif;
+                        margin-top: 3.2rem;
+                        margin-bottom: 1.9rem;
+                        @include max(500){
+                            font-size: 1.4rem;
+                            margin: 1.5rem 0;
+                        }
+
+                    }
+                    
+                    ul{
+                        li{
+                            font-size: 1.4rem;
+                             font-family: 'Arial', 'Helvetica', sans-serif;
+                            color: $greyColor;
+                            text-align: center;
+                            &:not(:last-child){
+                                margin-bottom: .5rem;
+                            }
+                            @include max(500){
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                    a{
+                        font-size: 1.4rem;
+                        color: $redColor;
+                        text-decoration: underline;
+                        text-align: center;
+                        display: block;
+                        margin: auto;
+                        margin-top: 3rem;
+                        font-family: 'RegArial', 'Helvetica', sans-serif;
+                        letter-spacing: -.25px;
+                        
+                    }
+                   
+                }
+                
+                &__compliment{
+                    
+                    width: 1160px;
+                    margin: 2rem auto auto auto;
+                    transform: translateX(12px);
+                    max-width: 100%;
+                    @include max(1299){
+                        transform: translateX(0px);
+                    }
+                    @include max(1199){
+                        transform: translateX(10px)
+                    }
+                    @include max(1198){
+                        transform:translateX(25px)
+                    }
+                    @include max(992){
+                        transform: translateX(0px);
+                    }
+                    
+                /*     @include max(1026){
+                        transform:translateX(23px)
+                    }
+                     @include max(1024){
+                        transform:translateX(20px)
+                    }
+                     @include max(1023){
+                        transform:translateX(18px)
+                    }
+                     @include max(1012){
+                        transform:translateX(0px)
+                    }*/
+
+                    
+                    &--content{
+                        
+                        display: flex;
+                        align-items:center;
+                        width: 1050px;
+                        margin: auto;
+                        padding: 2.2rem 0;
+                        background-color: $redColor;
+                        justify-content: center;
+                            @include max(1439){
+                       width: 1000px;
+                       transform: translateX(30px);
+                           padding: 1rem 0;
+                    }
+                        @include max(1299){
+                        width: 815px;
+                        transform: translateX(0px);
+                        justify-content: space-around;
+                        
+                    }
+                        @include max(992){
+                            width: 750px;
+                            margin: auto;
+                        }
+                        @include max(892){
+                            width: 700px;
+                        }
+                        @include max(769){
+                            width: 90%;
+                            flex-direction: column;
+                            height: 200px;
+                            margin-top: 5rem;
+                        }
+                        @include max(500){
+                            width: 320px;
+                            justify-content: center;
+                            padding: 3.5rem 0;
+                            height: auto;
+                        }
+                        h2{
+                            font-size: 3.6rem;
+                            color: $whiteColor;
+                            font-weight: 400;
+                            width: 850px;
+                            max-width: 100%;
+                                @include max(1439){
+                                   font-size: 3rem;
+                                    width: 800px;
+                                 
+                    }
+                            @include max(1299){
+                                
+                                font-size: 2.5rem;
+                                width: auto;
+                            }
+                            @include max(500){
+                                font-size: 2.2rem;
+                                width: 280px;
+                                margin: auto;
+                                text-align: center;
+                                line-height: 1.7;
+                            }
+                           
+                            @include media(501,700){
+                                width: 80%;
+                                margin: auto;
+                                text-align: center;
+                            }
+                            
+                            & ~img{
+                               
+                                @include max(769){
+                                    width: auto;
+                                }
+                                @include max(500){
+                                   margin-top: 2rem;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+
+            }
+            
+        }
+        
+       
+
+    }
+}

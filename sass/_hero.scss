@@ -1,0 +1,278 @@
+#hero{
+    
+    .hero{
+        
+        position: relative;
+        height: 600px;
+       
+     height: 600px;
+        background-image: url(../imgs/Hero@2x.png);
+        background-size: cover;
+        background-position: center;
+        
+        @include max(992){
+           height: 1095px;
+        }
+        @include max(992){
+            /*background-image: url(../imgs/heromobile.png);*/
+            background-position: 60% center;
+        }
+         @include max(600){
+            /*background-image: url(../imgs/heromobile.png);*/
+            background-position: 63% center;
+        }
+        img{
+            object-fit: cover;
+           
+        }
+      /*  >img{
+           
+            @include max(992){
+            height: 1100px;
+            }
+             
+        }*/
+       /* picture{
+            img{
+                height: 600px;
+            }
+        }*/
+        
+        &__wrap__main{
+         /*  position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;*/
+            color: #fff;
+            height: 100%;
+            &--0{
+                display: flex;
+                align-items: center;
+               
+            }
+            &--1{
+                
+                width: 1066px;
+                display: flex;
+               height: 100%;
+                align-items: center;
+                margin: auto;
+                justify-content: flex-end;
+                max-width: 100%;
+                @include max(1299){
+                    
+                    justify-content: center;
+                }
+                @include max(992){
+                    flex-direction: column;
+                    height: 95%;
+                }
+                @include max(500){
+                    height: 92%
+                }
+                
+                
+                 &__location{
+                 
+                width: 523px;
+                max-width: 100%;
+                     @include max(1299){
+                        width: 400px;
+                        }
+                     @include max(992){
+                         width:500px;
+                         margin: auto;
+                     }
+               
+                img{
+                    display: block;
+                    margin: auto;
+                    position: relative;
+                    top: -3rem;
+                    @include max(1299){
+                        
+                        top: -4rem;
+                    }
+                    @include max(992){
+                        top:-15px;
+                    }
+                }
+                h1{
+                    font-size: 6.4rem;
+                   
+                    font-family: 'bhatoshine';
+                    @include max(1299){
+                    
+                    font-size: 4rem;
+                }
+                    @include max(992){
+                        font-size: 6.4rem;
+                    }
+                     @include max(769){
+                        font-size: 6rem;
+                    }
+                     @include max(600){
+                        font-size: 5.8rem;
+                    }
+                       @include max(550){
+                        font-size: 5.2rem;
+                    }
+                    @include max(500){
+                        font-size: 5rem;
+                    }
+                    @include max(380){
+                        font-size: 4.5rem;
+                    }
+                    @include max(375){
+                        font-size: 4.5rem;
+                    }
+                    @include max(360){
+                        font-size: 4rem;
+                    }
+                     @include max(320){
+                        font-size: 3.5rem;
+                    }
+                }
+                p{
+                    font-size: 2rem;
+                        font-family: 'Arial', 'Helvetica', sans-serif;
+                    line-height: 1.7;
+                  
+                    max-width: 100%;
+                    
+                    letter-spacing: .25px;
+                  
+                    &:nth-of-type(2){
+                        margin:2rem 0;
+                        span{
+                            display: block;
+                        }
+                    }
+                      &:nth-of-type(1){
+                        @include max(500){
+                            margin-top: 3rem;
+                        }
+                    }
+                @include max(1299){
+                    
+                    font-size: 1.7rem;
+                    
+                }
+                    @include max(992){
+                        font-size: 2rem;
+                        
+                    }
+                      @include max(769){
+                        font-size: 1.9rem;
+                        
+                    }
+                       @include max(600){
+                        font-size: 1.8rem;
+                        
+                    }
+                    
+                    @include max(500){
+                        font-size: 2.1rem;
+                        width: 377px;
+                        margin-left: auto !important;
+                        margin-right: auto !important;
+                    }
+                     @include max(380){
+                        font-size: 1.8rem;
+                    }
+                    @include max(375){
+                        font-size: 1.75rem;
+                        letter-spacing: .25px;
+                    }
+                     @include max(360){
+                        font-size: 1.6rem;
+                        
+                    }
+                    @include max(320){
+                        width: 290px;
+                    }
+                    
+                }
+            }
+            
+            &__register{
+                width: 457px;
+                max-width: 100%;
+                margin-left: 5rem;
+                @include max(1200){
+                        width: 400px;
+                        }
+                @include max(992){
+                    margin-left: 0;
+                }
+                
+                 h2{
+                    span{
+                        display: block;
+                        font-size: 2rem;
+                        margin-top: .6rem;
+                    }
+                }
+                
+                form{
+                    height: 395px;
+                    background-color: $whiteColor;
+                    position: relative;
+                    margin-top: 2.5rem;
+                    @include max(500){
+                        width: 355px;
+                        height: 307px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    @include max(375){
+                        width: 325px;
+                    }
+                     @include max(350){
+                        width: 300px;
+                    }
+                    @include max(320){
+                        width: 290px;
+                    }
+                    button{
+                        background-color: $redColor;
+                        color: $whiteColor;
+                        width: 134px;
+                        padding: 1.4rem 0;
+                        font-size: 1.4rem;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        bottom: 35px;
+                        right: 40px;
+                        @include max(500){
+                            width: 214px;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                        span{
+                            display: inline-block;
+                            font-size: 14px;
+                            &:nth-of-type(2){
+                                font-size: 18px;
+                            }
+                            &::before{
+                                position: relative;
+                                right: -15px;
+                            }
+                        }
+                    }
+                }
+            } 
+            }
+          
+        }
+        
+        
+    }
+    
+}

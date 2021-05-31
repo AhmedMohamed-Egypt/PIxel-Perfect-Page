@@ -1,0 +1,223 @@
+
+
+
+/*owl carousel for lets go section */
+
+
+
+
+
+.letsgo{
+    .owl-stage{
+        .owl-item{
+           
+            margin: auto;
+            >div{
+                img{
+                    width: auto;
+                }
+            }
+        }
+    }
+    .owl-nav{
+        
+        button{
+            position: absolute;
+            top: 40%;
+            
+            span{
+                font-size: 50px;
+                color: #707070;
+                @include max(500){
+                    font-size: 30px;
+                }
+                &:nth-of-type(1){
+                    display: none;
+                }
+            }
+            &:hover{
+                background: none !important;
+                color: #000 !important;
+                
+            }
+            &:focus{
+                outline: 0 !important;
+            }
+            
+        }
+        .owl-prev{
+            left: 0;
+             @include max(992){
+                left: 150px;
+            }
+             @include max(820){
+                left: 80px;
+            }
+              @include max(675){
+                left: 50px;
+            }
+               @include max(600){
+                left: 10px;
+            }
+               @include max(550){
+                left: 0px;
+            }
+            @include max(500){
+                left: 25px;
+            }
+            @include max(420){
+                left: 5px;
+            }
+             @include max(390){
+                left: 0px;
+            }
+            @include max(375){
+                left: -10px;
+            }
+            
+        }
+        .owl-next{
+            right: 0;
+              @include max(992){
+                right: 150px;
+            }
+       
+            @include max(820){
+                right: 80px;
+            }
+              @include max(675){
+                right: 50px;
+            }
+                @include max(600){
+                right: 10px;
+            }
+            @include max(550){
+                right: 0px;
+            }
+            @include max(500){
+                right: 25px;
+            }
+             @include max(420){
+                right: 5px;
+            }
+             @include max(390){
+                right: 0px;
+            }
+             @include max(375){
+                right: -10px;
+            }
+        }
+    }
+    .owl-dot{
+        &:focus{
+            outline: 0 !important;
+        }
+    }
+}
+
+
+
+
+
+
+.meetGuides {
+     .owl-nav{
+        
+        button{
+            position: absolute;
+            top: 40%;
+            
+            span{
+                font-size: 50px;
+                color: #707070;
+                @include max(500){
+                    font-size: 30px;
+                }
+                &:nth-of-type(1){
+                    display: none;
+                }
+            }
+            &:hover{
+                background: none !important;
+                color: #000 !important;
+                
+            }
+            &:focus{
+                outline: 0 !important;
+            }
+            
+        }
+        .owl-prev{
+            left: 0;
+             @include max(992){
+                left:-30px;
+            }
+            @include max(769){
+                left: 50px;
+            }
+             @include max(600){
+                left: 20px;
+            }
+             @include max(500){
+                left: 0px;
+                
+            }
+              @include max(420){
+                left: -10px;
+                
+            }
+               @include max(400){
+                left: -30px;
+                
+            }
+         @include max(375){
+                left: -25px;
+                
+            }
+            
+        }
+        .owl-next{
+            right: 0;
+              @include max(992){
+                right: -30px;
+            }
+            @include max(769){
+                right: 50px;
+            }
+            @include max(600){
+                right: 20px;
+            }
+            @include max(500){
+                right: 0px;
+            }
+            
+             @include max(420){
+                right: -10px;
+            }
+             @include max(400){
+                right: -30px;
+            }
+            @include max(375){
+                right: -25px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

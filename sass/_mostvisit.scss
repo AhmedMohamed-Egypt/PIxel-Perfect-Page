@@ -1,0 +1,108 @@
+#mostvisit{
+    padding: 7rem 0;
+    background-color: $lightgrey;
+    margin-top: 7rem;
+    .mostvisit{
+    
+        
+        h2{
+            color: $redColor;
+            margin-bottom: 3.5rem;
+        }
+        .twoCta{
+            display: flex;
+            justify-content: center;
+            @include max(700){
+                flex-direction: column;
+                height: 150px;
+                align-items: center;
+                justify-content: space-around;
+            }
+            a{
+                width: 315px;
+               padding: 1.5rem 0;
+                display: inline-block;
+                
+                text-align: center;
+                background-color: $greyColor;
+                color: $whiteColor;
+                font-size: 1.4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:nth-child(1){
+                    margin-right: 3rem;
+                     @include max(700){
+              margin-right: 0;
+            }
+                }
+                span{
+                    &:nth-of-type(2){
+                        font-size: 16px;
+                    display: inline-block;
+                    margin-left: 3rem;
+                      
+                    }
+                    &:nth-of-type(1){
+                        display: inline-block;
+                     
+                        text-align: left;
+                    }
+                }
+                
+                &:nth-of-type(2){
+                    span{
+                        &:nth-child(1){
+                            width: 95.98px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#bookReservation{
+    background-color: $redColor;
+    
+    .bookReservation{
+        padding: 3rem;
+        p{
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+            color: $whiteColor;
+            letter-spacing: .5px;
+             font-family: 'RegArial', 'Helvetica', sans-serif;
+            @include max(435){
+                font-size:1.6rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

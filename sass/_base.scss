@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Bhatoshine';
+  src:
+    url('../fonts/bhatoshinereguler.otf') ,
+    url('../fonts/bhatoshinreguler.ttf') ;
+  font-weight: bold;
+  font-style: 'Regular';
+    
+}
+
+
+@font-face {
+  font-family: 'RegArial';
+  src:
+    url('../fonts/arial.ttf') ;
+     font-weight: bold;
+  font-style: 'Regular';
+    
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff');
+   
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cheveron-up:before {
+  content: "\e902";
+}
+.icon-cheveron-right:before {
+  content: "\e900";
+}
+.icon-cheveron-left:before {
+  content: "\e901";
+}
+.icon-chevron-up:before {
+  content: "\e903";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+
+
+
+
+
+
+
+*{
+   -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+html{
+
+    font-size: 62.5%;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+       -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+
+}
+*::after{
+       -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+#bodyContainer{
+    
+    width: 1375px;
+    margin: auto;
+    max-width: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+   font-size: 16px;
+ 
+    max-width: 100%;
+  overflow-x: hidden;
+       -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+h1,h2,p,h3{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    max-width: 100%;
+}
+
+.btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:focus{
+        outline: 0;
+    }
+    
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.h2{
+    font-size: 2.4rem;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+.txt-center{
+    text-align: center;
+}
+
+
+.container{
+    height: 100%;
+     @include max(991){
+        width: 100%;
+         margin: auto;
+    }
+    
+    @include min(992){
+        width: 960px;
+        margin: auto;
+    }
+
+   @include min(1199){
+        width: 1090px;
+        max-width:100%;
+        margin: auto;
+    }
+
+    
+     @include min(1299){
+        width: 1250px;
+        max-width:100%;
+        margin: auto;
+    }
+    @include min(1440){
+        width: 1375px;
+        max-width:100%;
+        margin: auto;
+    }
+}
+
+#scrollTop{
+        width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #A6192E;
+    display: block;
+    position: fixed;
+    /* top: 0; */
+    bottom: 25px;
+    right: 25px;
+    opacity: 0;
+    transition: .5s;
+    z-index: 999999;
+    @include max(500){
+        width: 30px;
+        height: 30px;
+        right: 5px;
+    }
+    &.hideopacity{
+        opacity: 1
+    }
+    span{
+        line-height: 50px;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+        color: #fff;
+          @include max(500){
+       line-height: 28px;
+              font-size: 16px;
+    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

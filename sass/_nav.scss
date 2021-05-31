@@ -1,0 +1,134 @@
+.navbar{
+
+    padding: 3.6rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include max(769){
+        flex-direction: column;
+        height: 200px;
+    }
+
+    &__logo{
+        width: 615px;
+        display: flex;
+        justify-content: flex-end;
+        max-width: 100%;
+      /*  @include max(1200){
+            width: 400px;
+        }*/
+         @include max(1299){
+            justify-content: center;
+        }
+        img{
+            display: block;
+            @include max(375){
+                width: 90%;
+            }
+             @include max(320){
+                width: 85%;
+            }
+         
+        }
+    }
+
+    &__navlinks{
+        width: 550px;
+        display: flex;
+        justify-content: flex-start;
+        
+        max-width: 100%;
+       /* @include max(1200){
+            width: 400px;
+        }*/
+       @include max(1299){
+            justify-content: center;
+        }
+        a{
+            color:$greyColor;
+            
+            font-family: Arial, Helvetica, sans-serif;
+            transition: .3s;
+            
+            &:hover{
+                
+                color: $redColor;
+            }
+            &.active{
+                
+                color: $redColor;
+            }
+          
+           
+           
+
+            display: inline-block;
+            font-size: 1.4rem;
+            position: relative;
+            &:nth-child(1){
+                margin-right: 5rem;
+                @include max(320){
+                    margin-right: 3rem;
+                    font-size: 1.5rem;
+                }
+            }
+             &:nth-child(2){
+                margin-right: 5rem;
+                 @include max(320){
+                    margin-right: 3rem;
+                      font-size: 1.5rem;
+                }
+            }
+             &:nth-child(3){
+              
+                 @include max(320){
+               
+                      font-size: 1.5rem;
+                }
+            }
+           
+           &:nth-child(2){
+            &::after{
+              content: "|";
+                position:absolute;
+                top: 0;
+                right: -25px;
+            }
+            &::before{
+                content: "|";
+                  position:absolute;
+                  top: 0;
+                  left: -25px;
+              }
+           }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
